@@ -50,4 +50,50 @@ module.exports = function(app) {
         res.status(400).json({ error: err });
       });
   });
+
+  app.post("/api/transaction", (req, res) => {
+    const { description, amount } = req.body;
+
+    db.Transaction.create({
+      description,
+      amount
+    })
+      .then(newTransaction => {
+        res.status(200).json(newTransaction);
+      })
+      .catch(err => {
+        console.log(err);
+        res.status(400).json({ error: err });
+      });
+  });
+
+  app.post("/api/budget", (req, res) => {
+    const { amount } = req.body;
+
+    db.Transaction.create({
+      amount
+    })
+      .then(newBudget => {
+        res.status(200).json(newBudget);
+      })
+      .catch(err => {
+        console.log(err);
+        res.status(400).json({ error: err });
+      });
+  });
+
+  app.post("/api/category", (req, res) => {
+    const { name } = req.body;
+
+    db.Transaction.create({
+      name
+    })
+      .then(newCategory => {
+        res.status(200).json(newCategory);
+      })
+      .catch(err => {
+        console.log(err);
+        res.status(400).json({ error: err });
+      });
+  });
 };

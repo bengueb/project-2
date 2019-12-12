@@ -19,15 +19,7 @@ module.exports = function (sequelize, DataTypes) {
     });
 
     Transaction.associate = models => {
-        Transaction.hasOne(models.Category, {
-            foreignKey: {
-                defaultValue: null
-            }
-        });
-    };
-
-    Transaction.associate = models => {
-        Transaction.belongsTo(models.BankingAccount, {
+        Transaction.belongsTo(models.Category, {
             foreignKey: {
                 defaultValue: null
             }

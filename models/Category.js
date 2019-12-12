@@ -13,7 +13,7 @@ module.exports = function (sequelize, DataTypes) {
     });
 
     Category.associate = models => {
-        Category.belongsTo(models.Transaction, {
+        Category.belongsTo(models.User, {
             foreignKey: {
                 defaultValue: null
             }
@@ -21,10 +21,14 @@ module.exports = function (sequelize, DataTypes) {
     };
 
     Category.associate = models => {
-        Category.belongsTo(models.Budget, {
-            foreignKey: {
-                defaultValue: null
-            }
+        Category.hasOne(models.Goal, {
+            onDelete: "cascade"
+        });
+    };
+
+    Category.associate = models => {
+        Category.hasMany(models.Transaction, {
+            onDelete: "cascade"
         });
     };
 
