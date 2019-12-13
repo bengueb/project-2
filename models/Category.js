@@ -21,7 +21,7 @@ module.exports = function(sequelize, DataTypes) {
   };
 
   Category.associate = models => {
-    Category.hasMany(models.Transaction, {
+    Category.hasMany(models.Expense, {
       onDelete: null
     }),
       Category.hasMany(models.Goal, {
