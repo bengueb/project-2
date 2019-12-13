@@ -25,7 +25,7 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false,
       validate: { min: 6 }
     },
-    totalGoal: {
+    income: {
       type: DataTypes.DECIMAL,
       allowNull: false,
       defaultValue: 0
