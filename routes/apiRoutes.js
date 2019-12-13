@@ -1,6 +1,7 @@
 var db = require("../models");
 
 module.exports = function(app) {
+<<<<<<< HEAD
   app.post("/api/users", (req, res) => {
     const { firstName, lastName, userName,pwd, email, income } = req.body;
 
