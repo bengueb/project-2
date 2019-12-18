@@ -28,7 +28,7 @@ See also the list of [contributors](https://github.com/doanja/project-2/graphs/c
 
 ## Authentication for Moolah
 
-Read more here: [Moolah_Auth]()
+Read more here: [Moolah_Auth](https://github.com/doanja/project-2/blob/master/Moolah_Auth.md)
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/doanja/project-2/blob/master/LICENSE) file for details
