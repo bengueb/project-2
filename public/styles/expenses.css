@@ -49,7 +49,7 @@
 }
 
 .tabs .tab a {
-  color:#004d40 !important;
+  color: #b2dfdb !important;
   font-weight: bolder;
   font-family: "Amatic SC", cursive;
   font-size: 29px;
@@ -58,6 +58,7 @@
 .table-container {
   margin-left: 80px;
   margin-right: 120px;
+  
 }
 
 .expense-category-name,
@@ -73,6 +74,7 @@
 .spending-header {
   font-size: 20px;
   color: #b2dfdb !important;
+ 
 }
 
 .category-amount,
@@ -85,7 +87,7 @@
 .create-expense-button,
 .edit-expense-button {
   margin-left: 20px;
-  background-color: #004d40;
+  background-color: #b2dfdb;
 }
 
 .waves-effect .waves-light btn {
@@ -101,7 +103,7 @@
   background-color: #004d40;
 }
 
-.goal{
+#goal{
   background-color: #004d40;
 }
 
@@ -111,7 +113,11 @@
 .text-white {
   background-color: #004d40;
 }
-.category-2{
+.expense-category-name{
+  background-color: #004d40;
+}
+
+.header{
   background-color: #004d40;
 }
 /* i {

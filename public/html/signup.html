@@ -7,8 +7,8 @@
 
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="../styles/materialize.min.css" media="screen,projection" />
-    <link href="../styles/dashboardstyle.css" type="text/css" rel="stylesheet" media="screen,projection" />
-    <link href="../styles/dashboardstyle.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link rel="stylesheet" href="../styles/dashboardstyle.css">
+    <link rel="stylesheet" href="../styles/login-signup.css">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
 
     <!--Let browser know website is optimized for mobile-->
@@ -30,25 +30,25 @@
 </head>
 
 <body>
-    <container>
+    <div class="container md-2">
         <div class="row">
             <form class="col s12" id="signup" name="signup" method="post" action="/signup">
                 <div class="row">
-                    <div class="input-field col s6">
+                    <div class="input-field">
                         <i class="material-icons prefix">account_circle</i>
                         <input id="icon_prefix" type="text" class="validate" name="firstname">
                         <label for="icon_prefix">First Name</label>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="input-field col s6">
+                    <div class="input-field col-lg-3 control-label">
                         <i class="material-icons prefix">account_circle</i>
                         <input id="icon_prefix" type="text" class="validate" name="lastname">
                         <label for="icon_prefix">Last Name</label>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="input-field col s6">
+                    <div class="input-field">
                         <i class="material-icons prefix">email</i>
                         <input id="icon_prefix" type="text" class="validate" name="email">
                         <label for="icon_prefix">Email</label>
@@ -56,19 +56,22 @@
                 </div>
 
                 <div class="row">
-                    <div class="input-field col s6">
+                    <div class="input-field">
                         <i class="material-icons prefix">person_outline</i>
                         <input id="icon_prefix" type="text" class="validate" name="username">
                         <label for="icon_prefix">Username<label>
                     </div>
                 </div>
+              
                 <div class="row">
-                    <div class="input-field col s6">
-                        <i class="material-icons prefix">lock<i>
-                                <input id="icon_prefix" type="password" class="validate" name="password">
-                                <label for="icon_prefix">Password</label>
+                    <div class="input-field">
+                        <i class="material-icons prefix">lock</i>
+                        <input id="icon_prefix" type="password" class="validate" name="password">
+                        <label for="icon_prefix">Password<label>
                     </div>
                 </div>
+
+
                 <div class="row">
                     <button class="btn waves-effect waves-light" type="submit" name="action">Submit
                         <i class="material-icons right">send</i>
@@ -76,14 +79,15 @@
                 </div>
             </form>
         </div>
-    </container>
+    </div>
 
     <footer id="footer-body">
         <div class="footer-copyright text-center">
+
             © 2019 Copyright. All rights reserved.
+
         </div>
     </footer>
-
 
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="../js/materialize.min.js"></script>

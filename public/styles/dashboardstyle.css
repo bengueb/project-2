@@ -58,3 +58,22 @@ img {
    height: 350px;
    display: block;
 }
+
+
+.row, tabs{
+    text-align: center;
+}
+
+.footer-body .page-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: right;
+  }
+
+.btn{
+    background-color: #004d40;
+}
+
+

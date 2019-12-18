@@ -1,4 +1,35 @@
 .container{
     padding:20px;
     size:auto;
+    -ms-layout-grid-char: auto;
+}
+
+.footer-copyright,
+.page-footer {
+  background-color: #004d40 !important;
+  color: whitesmoke;
+}
+
+#footer-body {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: right;
+}
+
+.md-2{
+    text-align: center;
+}
+
+textarea{
+    width: 100x;
+}
+
+.row{
+    text-align: center;
+    padding: 20px;
+}
+input[type="text"] {
+    width: 200px;
 }
